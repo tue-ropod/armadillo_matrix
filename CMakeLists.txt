@@ -29,10 +29,9 @@ include_directories(
         ${catkin_INCLUDE_DIRS}
 )
 
-
 ## Declare a C++ library
 add_library(armadillo
         src/wrap_libs.cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(armadillo ${catkin_LIBRARIES})
+target_link_libraries(armadillo blas lapack ${catkin_LIBRARIES})
