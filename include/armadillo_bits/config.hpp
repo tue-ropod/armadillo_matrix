@@ -21,7 +21,7 @@
 //// This will enable additional features, such as use of initialiser lists
 
 #if !defined(ARMA_USE_LAPACK)
-// #define ARMA_USE_LAPACK
+ #define ARMA_USE_LAPACK
 //// Uncomment the above line if you have LAPACK or a fast replacement for LAPACK,
 //// such as Intel's MKL, AMD's ACML, or the Accelerate framework.
 //// LAPACK is required for matrix decompositions (eg. SVD) and matrix inverse.
